@@ -1,11 +1,11 @@
 ## prediction maps, pretrained model, backbone model and datasets
-1.The prediction map of our method can be downloaded at https://pan.baidu.com/s/1yfELKFq4cQJt1GSRiCaI4Q?pwd=t0t3.
+1. The prediction map can be downloaded at https://pan.baidu.com/s/1ywbVzS7SHfXTEmVOtnG9_g?pwd=2qjc.(2qjc) 
 
-2.The pretrained model of our network can be downloaded at https://pan.baidu.com/s/1kNyRyYclrTnY-NbxQbbukg?pwd=q7fn.
+2. The pretrained model can be downloaded at https://pan.baidu.com/s/10gWYyESaV6LaCZv8_1PVBA?pwd=z8d1.(z8d1)
 
-3.The backbone model of our model can be downloaded at https://pan.baidu.com/s/1ESkV-ol_VzVAbDkDCXxNgQ?pwd=ib2d.
+3. The backbone model can be downloaded at https://pan.baidu.com/s/16bKJaxewVfFXd73ICV6zDg?pwd=vn6v.(vn6v)
 
-4.The datasets of our method can be downloaded at https://pan.baidu.com/s/1F2-vuEkGz6CaCg5QE-xuOQ?pwd=v2lt.
+4. The datasets can be downloaded at https://pan.baidu.com/s/1Kpxaqv0n5YP-kDT8Id4wzA?pwd=pugv.(pugv)
 
 
 ## environment
@@ -14,24 +14,33 @@
 
 
 ## start
-git clone https://github.com/forever-rz/MAMIFNET 
+1. git clone https://github.com/forever-rz/MAMIFNET 
 
-conda create --name MAMIFNet python=3.8.13
+2. conda create --name MAMIFNet python=3.8.13
 
-conda activate MAMIFNet
+3. conda activate MAMIFNet
 
-pip install -r requirements.txt 
+4. pip install -r requirements.txt 
 
-pip install -U openmim 
+5. pip install -U openmim 
 
-mim install mmcv-full==1.5.2
+6. mim install mmcv-full==1.5.2
+
 
 
 ## test
-Create folder './data'
+The relevant settings for data and weights are in cofig.py. The default test is as follows：
 
-download datasets file COD_dataset(https://pan.baidu.com/s/1F2-vuEkGz6CaCg5QE-xuOQ?pwd=v2lt), unzip and move it to './data'
+1. create folder './data'
 
-download pretrained model( https://pan.baidu.com/s/1kNyRyYclrTnY-NbxQbbukg?pwd=q7fn)
+2. download datasets file COD_dataset at https://pan.baidu.com/s/1Kpxaqv0n5YP-kDT8Id4wzA?pwd=pugv, unzip and move it to './data'
 
-run test.py
+3. create folder './PVTv2_Seg'
+
+4. download backbone model at https://pan.baidu.com/s/10gWYyESaV6LaCZv8_1PVBA?pwd=z8d1 and unip it.
+
+5. download pretrained model at https://pan.baidu.com/s/10gWYyESaV6LaCZv8_1PVBA?pwd=z8d1.
+
+6. run test.py
+
+
