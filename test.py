@@ -119,7 +119,6 @@ def val_model(exp_name,net,scale,results_path,pth_path,epoch,excel_path,save_pre
                 time_each = time.time() - start_each
                 time_list.append(time_each)
 
-                # prediction = np.array(transforms.Resize((h, w))(to_pil(prediction.data.squeeze(0).cpu())))
                 prediction = np.array(transforms.Resize((h_mask, w_mask))(to_pil(prediction.data.squeeze(0).cpu())))
                 if save_predict_images:
                     Image.fromarray(prediction).convert('L').save(
@@ -158,8 +157,7 @@ def main(exp_name,net,scale,results_path,pth_path,pth_list,excel_path):
             transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
         ])
         to_pil = transforms.ToPILImage()
-        # net.load_state_dict(torch.load(pth_path))
-        # Load the state_dict
+       
 
         state_dict = torch.load(pth_path)
 
@@ -174,43 +172,33 @@ def main(exp_name,net,scale,results_path,pth_path,pth_list,excel_path):
 
 
         net.eval()
-        # path_excel = './results_excel5.xlsx'
 
         with torch.no_grad():
-            # excel_logger = MetricExcelRecorder(xlsx_path=path_excel, dataset_names=[name for name, root in to_test.items()])
             excel_logger = MetricExcelRecorder(xlsx_path=path_excel, dataset_names=[name for name, root in to_test.items()],metric_names = ["mae", "meanem", "smeasure", "meanfm", "wfmeasure","adpfm",  "maxfm", "adpem", "maxem"])
             start = time.time()
             # v1
             for name, root in to_test.items():
                 cal_total_seg_metrics = CalTotalMetric()
                 time_list = []
-                # if 'NC4K' in name:
-                #     image_path = os.path.join(root, 'Imgs')
-                #
-                # else:
-                #     image_path = os.path.join(root, 'Image')
+
                 image_path = os.path.join(root, 'Imgs')
 
                 mask_path = os.path.join(root, 'GT')
-                # check_mkdir(os.path.join(results_path, exp_name, name))
                 check_mkdir(os.path.join(results_path, name))
                 img_suffix = 'jpg'
                 img_list = [os.path.splitext(f)[0] for f in os.listdir(image_path) if f.endswith(img_suffix)]
-                # sorted_img_list = sorted(img_list, key=lambda x: int(os.path.splitext(x)[0]))
 
-                # img_list = sorted(img_list, key=lambda x: int(os.path.splitext(x.split('-')[1])[0]))
 
                 for img_name in tqdm(img_list, desc="Processing images"):
                     # Use the tqdm instance's write method to ensure the message starts on a new line
                     tqdm.write(f"\nProcessing image {img_name}")
-                    # if '60' in img_name:
-                    #     print(1)
+
                     img = Image.open(os.path.join(image_path, img_name + '.' + img_suffix)).convert('RGB')
 
                     mask = np.array(Image.open(os.path.join(mask_path, img_name + '.png')).convert('L'))
 
                     w, h = img.size
-                    # w_mask, h_mask = mask.size
+
                     h_mask, w_mask = mask.shape
                     img_var = Variable(img_transform(img).unsqueeze(0)).cuda()
 
@@ -223,7 +211,6 @@ def main(exp_name,net,scale,results_path,pth_path,pth_list,excel_path):
                     time_each = time.time() - start_each
                     time_list.append(time_each)
 
-                    # prediction = np.array(transforms.Resize((h, w))(to_pil(prediction.data.squeeze(0).cpu())))
                     prediction = np.array(transforms.Resize((h_mask, w_mask))(to_pil(prediction.data.squeeze(0).cpu())))
                     Image.fromarray(prediction).convert('L').save(
                         # os.path.join(results_path, exp_name, name, img_name + '.png'))
@@ -244,10 +231,10 @@ def evluation_with_resultspath(results_path,path_excel):
     print(results_path)
     _, exp_name = os.path.split(results_path)
     to_test = OrderedDict([
-        # ('CHAMELEON', chameleon_path),
+        ('CHAMELEON', chameleon_path),
         ('CAMO', camo_path),
-        # ('COD10K', cod10k_path),
-        # ('NC4K', nc4k_path)
+        ('COD10K', cod10k_path),
+        ('NC4K', nc4k_path)
     ])
     # excel_logger = MetricExcelRecorder(xlsx_path=path_excel, dataset_names=[name for name, root in to_test.items()])
     excel_logger = MetricExcelRecorder(xlsx_path=path_excel, dataset_names=[name for name, root in to_test.items()],
