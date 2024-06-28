@@ -285,7 +285,6 @@ if __name__ == '__main__':
     os.environ['CUDA_VISIBLE_DEVICES'] = '0'
     exp_name = 'MAMIFNet_v1'
     version = exp_name.split("_v")[1].split("'")[0]
-    # from SARNet import SARNet
     from MAMIFNet  import MAMIFNet
     net = MAMIFNet('pvt_v2_b4').cuda()
 
