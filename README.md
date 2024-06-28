@@ -36,7 +36,7 @@ The relevant settings for data and weights are in cofig.py. The default test is 
 
 3. create folder './PVTv2_Seg'
 
-4. download backbone model at https://pan.baidu.com/s/10gWYyESaV6LaCZv8_1PVBA?pwd=z8d1 and unip it.
+4. download backbone model at https://pan.baidu.com/s/10gWYyESaV6LaCZv8_1PVBA?pwd=z8d1 and unzip it.
 
 5. download pretrained model at https://pan.baidu.com/s/10gWYyESaV6LaCZv8_1PVBA?pwd=z8d1.
 
