@@ -1,12 +1,11 @@
 ## prediction maps, pretrained model, backbone model and datasets
-1. The prediction map can be downloaded at https://pan.baidu.com/s/1ywbVzS7SHfXTEmVOtnG9_g?pwd=2qjc.(2qjc) 
+1. The prediction map can be downloaded at https://pan.baidu.com/s/1ywbVzS7SHfXTEmVOtnG9_g?pwd=2qjc.
 
-2. The pretrained model can be downloaded at https://pan.baidu.com/s/10gWYyESaV6LaCZv8_1PVBA?pwd=z8d1.(z8d1)
+2. The pretrained model can be downloaded at https://pan.baidu.com/s/10gWYyESaV6LaCZv8_1PVBA?pwd=z8d1.
 
-3. The backbone model can be downloaded at https://pan.baidu.com/s/16bKJaxewVfFXd73ICV6zDg?pwd=vn6v.(vn6v)
+3. The backbone model can be downloaded at https://pan.baidu.com/s/16bKJaxewVfFXd73ICV6zDg?pwd=vn6v.
 
-4. The datasets can be downloaded at https://pan.baidu.com/s/1Kpxaqv0n5YP-kDT8Id4wzA?pwd=pugv.(pugv)
-
+4. The datasets can be downloaded at https://pan.baidu.com/s/1Kpxaqv0n5YP-kDT8Id4wzA?pwd=pugv.
 
 ## environment
 1. Python 3.8.13
@@ -14,7 +13,7 @@
 
 
 ## start
-1. git clone https://github.com/forever-rz/MAMIFNET 
+1. git clone https://github.com/CHANTILLY2023/MAMIFNet
 
 2. conda create --name MAMIFNet python=3.8.13
 
