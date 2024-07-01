@@ -10,14 +10,7 @@ import torch.nn.functional as F
 import torch.fft as fft
 import PIL
 
-# from CBAM import CBAMLayer3 as CBAMLayer
-class CBAMLayer(nn.Module):
-    def __init__(self, in_channels, reduction_ratio=16, kernel_size=7):
-        super(CBAMLayer, self).__init__()
-
-    def forward(self, x):
-
-        return x
+from CBAM import CBAMLayer3 as CBAMLayer
 
 
 class ConcatTupleLayer(nn.Module):
@@ -77,7 +70,6 @@ class MAM_FourierUnit(nn.Module):
             frequency_m = torch.zeros((h, w)).cuda()
             ch, cw = h // 2, w // 2
             line = int((w * h * self.frequency_m_rate) ** .5 // 2)
-            # print( self.frequency_m_rate)
             frequency_m[cw - line:cw + line, ch - line:ch + line] = 1
             img_fft_shift_process = img_fft_shift * (1 - frequency_m) + frequency_m * (-10)  # ????
             img_fft_ishift = torch.fft.ifftshift(img_fft_shift_process)
@@ -392,8 +384,8 @@ if __name__ == '__main__':
     fc = input * mask
     bg = input * (1 - mask)
     channels = 128
-    net = MAM_FFC_Layer(dim =channels,fre_m=0.9).cuda()
-
+    net = MAM_FFC_Layer(dim =channels).cuda()
+  
     out2 = net(fc,mask)
 
     print(out2.shape)
