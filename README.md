@@ -21,13 +21,13 @@
 
 3. conda activate MAMIFNet
 
-4.pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
+4. pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
 
-5. pip install -r requirements.txt 
+6. pip install -r requirements.txt 
 
-6. pip install -U openmim 
+7. pip install -U openmim 
 
-7. mim install mmcv-full==1.5.2
+8. mim install mmcv-full==1.5.2
 
 ## test
 The relevant setting paths for data and weights are located in `config.py`. The default test is as follows:
