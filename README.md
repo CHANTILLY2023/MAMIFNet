@@ -1,11 +1,20 @@
 ## Open-source schedule
-1. The prediction map can be downloaded at https://pan.baidu.com/s/1GhUNZ02qzGDXSfhE0tj2iw?pwd=ty3a or https://drive.google.com/file/d/1p9S4RSqCu_1FggRwlImP66royenjAg-R/view?usp=sharing.
 
-2. The pretrained model can be downloaded at https://pan.baidu.com/s/1P1zZpFGI0_74S5nofSjjRg?pwd=s3c4 or https://drive.google.com/file/d/1rfnFfUZL3bv-zg8hOLWbHoStI3IpL2Fe/view?usp=sharing.
+## Updates
 
-3. The backbone model can be downloaded at https://pan.baidu.com/s/1pyGVL2mpxbX3g39T1bTMIg?pwd=qdhg or https://drive.google.com/file/d/1-ueav8i01-kOTsRcjbdYrO6M0VZo5OpI/view?usp=sharing.
+- 28 Jun 2024: Open-sourced model and test code
+- 19 Aug 2024: Released prediction map, pretrained model, backbone, and datasets
 
-4. The datasets can be downloaded at https://pan.baidu.com/s/1hV0ffZbIA9I2nCZ4nYUaSg?pwd=x6w5 or https://drive.google.com/drive/folders/11_eIwD3yrc9KdD-6RJtzVGbwQuddnQSq?usp=sharing.
+## Downloads
+
+| Item | Baidu Pan | Google Drive |
+|------|-----------|--------------|
+| Prediction Map | [Link](https://pan.baidu.com/s/1GhUNZ02qzGDXSfhE0tj2iw?pwd=ty3a) | [Link](https://drive.google.com/file/d/1p9S4RSqCu_1FggRwlImP66royenjAg-R/view?usp=sharing) |
+| Pretrained Model | [Link](https://pan.baidu.com/s/1P1zZpFGI0_74S5nofSjjRg?pwd=s3c4) | [Link](https://drive.google.com/file/d/1rfnFfUZL3bv-zg8hOLWbHoStI3IpL2Fe/view?usp=sharing) |
+| Backbone Model | [Link](https://pan.baidu.com/s/1pyGVL2mpxbX3g39T1bTMIg?pwd=qdhg) | [Link](https://drive.google.com/file/d/1-ueav8i01-kOTsRcjbdYrO6M0VZo5OpI/view?usp=sharing) |
+| Datasets | [Link](https://pan.baidu.com/s/1hV0ffZbIA9I2nCZ4nYUaSg?pwd=x6w5) | [Link](https://drive.google.com/drive/folders/11_eIwD3yrc9KdD-6RJtzVGbwQuddnQSq?usp=sharing) |
+
+Note: Training source code will be released upon paper acceptance.
 
 ## environment
 1. Python 3.8.13
