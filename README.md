@@ -4,6 +4,7 @@
 
 - 28 Jun 2024: Open-sourced model and test code
 - 19 Aug 2024: Released prediction map, pretrained model, backbone, and datasets
+- Training source code will be released upon paper acceptance.
 
 ## Downloads
 
@@ -14,7 +15,7 @@
 | Backbone Model | [Link](https://pan.baidu.com/s/1pyGVL2mpxbX3g39T1bTMIg?pwd=qdhg) | [Link](https://drive.google.com/file/d/1-ueav8i01-kOTsRcjbdYrO6M0VZo5OpI/view?usp=sharing) |
 | Datasets | [Link](https://pan.baidu.com/s/1hV0ffZbIA9I2nCZ4nYUaSg?pwd=x6w5) | [Link](https://drive.google.com/drive/folders/11_eIwD3yrc9KdD-6RJtzVGbwQuddnQSq?usp=sharing) |
 
-Note: Training source code will be released upon paper acceptance.
+
 
 ## environment
 1. Python 3.8.13
