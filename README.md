@@ -1,6 +1,6 @@
 
 
-## Updates
+## Open-source schedule
 
 - 28 Jun 2024: Open-sourced model and test code
 - 19 Aug 2024: Released prediction map, pretrained model, backbone, and datasets
