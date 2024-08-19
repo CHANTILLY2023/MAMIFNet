@@ -1,11 +1,11 @@
 ## prediction maps, pretrained model, backbone model and datasets
-1. The prediction map can be downloaded at https://pan.baidu.com/s/1ywbVzS7SHfXTEmVOtnG9_g?pwd=2qjc.
+1. The prediction map can be downloaded at https://pan.baidu.com/s/1GhUNZ02qzGDXSfhE0tj2iw?pwd=ty3a .
 
-2. The pretrained model can be downloaded at https://pan.baidu.com/s/10gWYyESaV6LaCZv8_1PVBA?pwd=z8d1.
+2. The pretrained model can be downloaded at https://pan.baidu.com/s/1P1zZpFGI0_74S5nofSjjRg?pwd=s3c4.
 
-3. The backbone model can be downloaded at https://pan.baidu.com/s/16bKJaxewVfFXd73ICV6zDg?pwd=vn6v.
+3. The backbone model can be downloaded at https://pan.baidu.com/s/1pyGVL2mpxbX3g39T1bTMIg?pwd=qdhg.
 
-4. The datasets can be downloaded at https://pan.baidu.com/s/1Kpxaqv0n5YP-kDT8Id4wzA?pwd=pugv.
+4. The datasets can be downloaded at https://pan.baidu.com/s/1hV0ffZbIA9I2nCZ4nYUaSg?pwd=x6w5.
 
 ## environment
 1. Python 3.8.13
