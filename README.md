@@ -1,5 +1,5 @@
-## prediction maps, pretrained model, backbone model and datasets
-1. The prediction map can be downloaded at https://pan.baidu.com/s/1GhUNZ02qzGDXSfhE0tj2iw?pwd=ty3a .
+## Open-source schedule
+1. The prediction map can be downloaded at https://pan.baidu.com/s/1GhUNZ02qzGDXSfhE0tj2iw?pwd=ty3a.
 
 2. The pretrained model can be downloaded at https://pan.baidu.com/s/1P1zZpFGI0_74S5nofSjjRg?pwd=s3c4.
 
